@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfaf7;
+    color: #332b24;
+}
+
+/* Header & Nav */
+header {
+    padding: 20px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #332b24;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.insta-link {
+    font-weight: 600;
+    color: #8a5a44;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1589492477829-5e65395b66cc?auto=format&fit=crop&w=1200') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #8a5a44;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+/* Product Gallery */
+.gallery {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    display: block;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.price {
+    color: #8a5a44;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #332b24;
+    color: #fdfaf7;
+    font-size: 0.9rem;
+}
